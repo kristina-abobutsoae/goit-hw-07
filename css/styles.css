@@ -1264,5 +1264,32 @@ button {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 427px) {
+  .mobile-social {
+    gap: 24px;
+  }
+}
 
+@media screen and (max-width: 767px) and (min-width: 428px) {
+  .mobile-social {
+    gap: 56px;
+  }
+}
 
+.mobile-link.link,
+.email-mobile-link.link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-link.link:focus,
+.email-mobile-link.link:focus,
+.mobile-link.link:hover,
+.email-mobile-link.link:hover {
+  color: var(--primary-brand);
+}
+
+.mobile-link.link.current-mobile {
+  color: var(--alternative-color);
+}
