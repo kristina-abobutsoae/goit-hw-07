@@ -514,6 +514,12 @@ button {
 
 /* TEAM */
 
+@media only screen and (min-width: 768px) {
+   .fourth-sec.section{
+    margin-top: 96px;
+  }
+}
+
 .team {
   background-color: #f4f4f4;
   padding-bottom: 0;
@@ -847,12 +853,25 @@ button {
 }
 
 .sub-title {
+  text-align: center;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-color);
+}
+
+@media only screen and (min-width: 1158px) {
+  .sub-title {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sub-title {
+    display: flex;
+  }
 }
 
 
