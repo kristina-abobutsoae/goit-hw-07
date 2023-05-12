@@ -928,14 +928,12 @@ button {
 
 .backdrop {
   position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
 
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
 
   background: rgba(46, 47, 66, 0.4);
   transition: opacity 400ms var(--animation), visibility 400ms var(--animation);
@@ -946,54 +944,51 @@ button {
   visibility: hidden;
   pointer-events: none;
 }
+
 .modal {
-  position: absolute;
-  top: 96px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  width: 100%;
-  min-height: 576px;
-  padding: 72px 16px 24px;
+    width: 408px;
+    min-height: 576px;
+    padding: 24px;
 
-  background: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+    border-radius: 4px;
 }
 
-@media screen and (min-width: 428px) {
+@media only screen and (max-width: 427px) {
   .modal {
-    max-width: 392px;
-    height: 584px;
-    padding: 72px 24px 24px;
+      width: 90%;
+    }
   }
-}
-
-@media screen and (min-width: 768px) {
-  .modal {
-    max-width: 408px;
+  
+  @media screen and (max-height: 584px) {
+      .backdrop {
+          overflow: auto;
+      }
+      
+      .modal {
+          top: 0;
+          transform: translate(-50%, 0);
+      }
   }
-}
-
-@media screen and (min-width: 1158px) {
-  .modal {
-    top: 80px;
-  }
-}
 
 .modal-button {
   position: absolute;
-  margin-left: auto;
+  top: 24px;
+  right: 24px;
+  display: flex;
   width: 24px;
   height: 24px;
 
-  display: flex;
+  margin-left: auto;
   align-items: center;
   justify-content: center;
-  top: 24px;
-  right: 24px;
 
   background: #e7e9fc;
   border-radius: 50%;
@@ -1002,48 +997,71 @@ button {
   cursor: pointer;
   transition: color var(--animation), background-color var(--animation);
 }
+
 .modal-button:hover,
 .modal-button:focus {
   color: var(--white-color);
   background-color: var(--alternative-color);
 }
 .modal-icon {
+
   fill: currentColor;
+
+  transition: var(--animation);
+}
+
+.modal-button:hover .modal-icon,
+.modal-button:focus .modal-icon {
+    fill: var(--white-color);
+}
+
+@media screen and (orientation:landscape) {
+  .backdrop {
+      top: 0;
+      transform: translateY(0);
+  }
 }
 
 /* Modal form */
 
 .modal-title {
   display: block;
-  margin-bottom: 16px;
-
   text-align: center;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  margin-top: 24px;
+  margin-bottom: 16px;
 
   color: #2e2f42;
 }
+
 .modal-form {
   display: block;
+  margin-bottom: 4px;
+
+  color: #8E8F99;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
+
 .modal-form-label {
   display: block;
+  
   margin-bottom: 4px;
+
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01;
-
-  color: #8e8f99;
 }
+
 .modal-form-field {
-  display: block;
   position: relative;
   margin-bottom: 8px;
 }
+
 .modal-form-input {
-  padding-left: 38px;
+  padding: 11px 38px;
   width: 100%;
   height: 40px;
 
@@ -1054,22 +1072,27 @@ button {
 
   transition: outline-color 250ms var(--animation);
 }
+
 .modal-form-input:focus {
   outline-color: var(--main-color);
 }
+
 .modal-form-icon {
   position: absolute;
   top: 50%;
-  left: 16px;
+  left: 19px;
+  transform: translateY(-50%);
 
   fill: var(--primary-color);
   transform: translateY(-50%);
   transition: fill 250ms var(--animation);
   pointer-events: none;
 }
+
 .modal-form-input:focus + .modal-form-icon {
   fill: var(--main-color);
 }
+
 .modal-form-message {
   display: block;
   width: 100%;
