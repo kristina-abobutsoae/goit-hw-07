@@ -338,7 +338,7 @@ ul {
   .first-sec {
       background-image: 
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/people-office\ 1desk.jpg);
+      url(../images/people-office_1desk.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -347,7 +347,7 @@ ul {
       .first-sec {
           background-image:
           linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-          url(../images/people-office\ 1desk@2x.jpg);
+          url(../images/people-office_1desk@2x.jpg);
       }
   }
 }
@@ -1320,7 +1320,16 @@ color: var(--primary-color);
   border-radius: 50%;
   outline: none;
 
-  stroke: var(--primary-color);
+}
+
+.hamburger-icon {
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  background-color: transparent;
+  stroke: currentColor;
+  fill: currentColor;
+  border: none;
 }
 
 .menu-toggle.js-close-menu {
