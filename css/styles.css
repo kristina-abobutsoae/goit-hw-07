@@ -196,6 +196,18 @@ ul {
   margin-right: 76px;
 }
 
+@media only screen and (min-width: 768px) {
+  .trademark-link.link {
+  margin-right: 120px;
+} 
+}
+
+@media only screen and (min-width: 1168px) {
+  .trademark-link.link {
+  margin-left: 76px;
+} 
+}
+
 /* Desktop navigation */
 .nav-list {
   display: flex;
