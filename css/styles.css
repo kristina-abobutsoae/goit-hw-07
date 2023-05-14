@@ -1322,7 +1322,7 @@ color: var(--primary-color);
 
 }
 
-.hamburger-icon {
+/* .hamburger-icon {
   position: absolute;
   top: 24px;
   right: 16px;
@@ -1330,7 +1330,7 @@ color: var(--primary-color);
   stroke: currentColor;
   fill: currentColor;
   border: none;
-}
+} */
 
 .menu-toggle.js-close-menu {
   width: 24px;
