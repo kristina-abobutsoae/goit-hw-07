@@ -338,7 +338,7 @@ ul {
   .first-sec {
       background-image: 
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/people-office_1desk.jpg);
+      url(../images/people-office1_desk.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -347,7 +347,7 @@ ul {
       .first-sec {
           background-image:
           linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-          url(../images/people-office_1desk@2x.jpg);
+          url(../images/people-office1_desk@2x.jpg);
       }
   }
 }
