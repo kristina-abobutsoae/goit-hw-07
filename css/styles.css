@@ -269,16 +269,10 @@ ul {
 }
 
 @media only screen and (min-width: 1158px) {
-  .menu-toggle-icon {
+  .hamburger-icon {
     display: none;
   }
 }
-
-.menu-toggle-icon {
-    margin: 0;
-    stroke: var(--primary-color);
-  }
-
 
 /* ==== HERO SECTION ==== */
 
@@ -1325,6 +1319,8 @@ color: var(--primary-color);
   border: none;
   border-radius: 50%;
   outline: none;
+
+  stroke: var(--primary-color);
 }
 
 .menu-toggle.js-close-menu {
