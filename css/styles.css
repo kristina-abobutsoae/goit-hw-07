@@ -297,8 +297,8 @@ ul {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  /* padding-top: 188px;
+  padding-bottom: 188px; */
   text-align: center;
 }
 
@@ -348,7 +348,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   .first-sec {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -449,10 +449,6 @@ ul {
 }
 
 /* ==== SECOND AND FOURTH SECTIONS ==== */
-
-.paragraph {
-  margin-top: 8px;
-}
 
 .second-sec-div {
   display: none;
@@ -663,6 +659,7 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.11;
+  margin-top: 8px;
 
   text-align: center;
   letter-spacing: 0.02em;
@@ -1009,13 +1006,15 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-color);
+
+  margin-bottom: 16px;
 }
 
 .input {
   padding: 8px 16px;
   width: 100%;
   height: 40px;
-  margin-bottom: 16px;
+
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 4px;
@@ -1461,11 +1460,14 @@ ul {
 
 .mobile-link.tel {
   display: inline-block;
-  padding-bottom: 40px;
 }
 
 .mobile-contacts.list {
   display: block;
+}
+
+.mobile-tel.email {
+  padding-top: 40px;
 }
 
 .mobile-social {
